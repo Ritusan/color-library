@@ -9,7 +9,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.10",
+    "element-plus": "^1.0.2-beta.70",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^3.2.1",
+    "clipboard": "^2.0.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
