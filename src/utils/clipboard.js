@@ -17,7 +17,6 @@ export default function handleClipboard(text, event) {
     text: () => text
   })
   clipboard.on('success', (text) => {
-    console.log(text)
     clipboardSuccess(text)
     clipboard.off('error')
     clipboard.off('success')
