@@ -758,7 +758,8 @@ import clipboard from '@/utils/clipboard'
     },
     methods: {
       handleClipboard(text, event) {
-        let params = text.name + text.value
+        // let params = text.name + text.value
+        let params = text.value
         clipboard(params, event)
       }
     }
