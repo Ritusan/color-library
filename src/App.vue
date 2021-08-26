@@ -1,5 +1,4 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <Colorful msg="Welcome to Your Vue.js App"/>
   <router-view></router-view>
 </template>
