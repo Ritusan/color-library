@@ -2,7 +2,7 @@
     <div>
         <div class="router-nav">
             <router-link :to="{name: 'colorful'}" class="">单色</router-link>
-            <router-link :to="{name: 'colorMachChart'}">颜色组合</router-link>
+            <router-link :to="{name: 'colorMatchChart'}">颜色组合</router-link>
         </div>
     </div>
 </template>
