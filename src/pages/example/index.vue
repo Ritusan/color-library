@@ -8,17 +8,15 @@
 </template>
 
 <script>
-import sideBar from "../../components/sideBar.vue";
+import SideBar from "../../components/SideBar.vue";
 
 export default {
   name: "App",
   components: {
-    sideBar,
+    SideBar,
   },
   data() {
-    return {
-      
-    };
+    return {};
   },
 };
 </script>

@@ -1,15 +1,23 @@
 import { createRouter, createWebHashHistory } from "vue-router"
 
 const colorful = () => import("../pages/colorful")
-const colorMatchChart = () => import("../pages/colorful/colorMatchChart")
+const ColorMatchChart = () => import("../pages/colorful/ColorMatchChart")
 
 const exampleColor = () => import("../pages/example")
 const exampleTheme = () => import("../pages/example/theme")
-const hotAirBalloon = () => import("../pages/example/hotAirBalloon")
-const paradiseTropicalFish = () => import("../pages/example/paradiseTropicalFish")
-const happyEaster = () => import("../pages/example/happyEaster")
-const rainbowSoapBubbles = () => import("../pages/example/rainbowSoapBubbles")
-const beachResortMaldives = () => import("../pages/example/beachResortMaldives")
+const HotAirBalloon = () => import("../pages/example/HotAirBalloon")
+const ParadiseTropicalFish = () => import("../pages/example/ParadiseTropicalFish")
+const HappyEaster = () => import("../pages/example/HappyEaster")
+const RainbowSoapBubbles = () => import("../pages/example/RainbowSoapBubbles")
+const BeachResortMaldives = () => import("../pages/example/BeachResortMaldives")
+const ScentOfLavender = () => import("../pages/example/ScentOfLavender")
+const MaidensPrayer = () => import("../pages/example/MaidensPrayer")
+const BeadworkPendantSouvenirs = () => import("../pages/example/BeadworkPendantSouvenirs")
+const SparklingNightView = () => import("../pages/example/SparklingNightView")
+const SceneryOfSpring = () => import("../pages/example/SceneryOfSpring")
+const SceneryOfSummer = () => import("../pages/example/SceneryOfSummer")
+const SceneryOfAutumn = () => import("../pages/example/SceneryOfAutumn")
+const SceneryOfWinter = () => import("../pages/example/SceneryOfWinter")
 
 const routes = [
   {
@@ -18,9 +26,9 @@ const routes = [
     component: colorful,
   },
   {
-    path: "/colorMatchChart",
-    name: "colorMatchChart",
-    component: colorMatchChart,
+    path: "/ColorMatchChart",
+    name: "ColorMatchChart",
+    component: ColorMatchChart,
   },
   {
     path: "/exampleColor",
@@ -33,31 +41,71 @@ const routes = [
         component: exampleTheme,
       },
       {
-        path: "/hotAirBalloon",
-        name: "hotAirBalloon",
-        component: hotAirBalloon,
+        path: "/HotAirBalloon",
+        name: "HotAirBalloon",
+        component: HotAirBalloon,
       },
       {
-        path: "/paradiseTropicalFish",
-        name: "paradiseTropicalFish",
-        component: paradiseTropicalFish,
+        path: "/ParadiseTropicalFish",
+        name: "ParadiseTropicalFish",
+        component: ParadiseTropicalFish,
       },
       {
-        path: "/happyEaster",
-        name: "happyEaster",
-        component: happyEaster,
+        path: "/HappyEaster",
+        name: "HappyEaster",
+        component: HappyEaster,
       },
       {
-        path: "/rainbowSoapBubbles",
-        name: "rainbowSoapBubbles",
-        component: rainbowSoapBubbles,
+        path: "/RainbowSoapBubbles",
+        name: "RainbowSoapBubbles",
+        component: RainbowSoapBubbles,
       },
       {
-        path: "/beachResortMaldives",
-        name: "beachResortMaldives",
-        component: beachResortMaldives,
+        path: "/BeachResortMaldives",
+        name: "BeachResortMaldives",
+        component: BeachResortMaldives,
       },
-    ]
+      {
+        path: "/ScentOfLavender",
+        name: "ScentOfLavender",
+        component: ScentOfLavender,
+      },
+      {
+        path: "/MaidensPrayer",
+        name: "MaidensPrayer",
+        component: MaidensPrayer,
+      },
+      {
+        path: "/BeadworkPendantSouvenirs",
+        name: "BeadworkPendantSouvenirs",
+        component: BeadworkPendantSouvenirs,
+      },
+      {
+        path: "/SparklingNightView",
+        name: "SparklingNightView",
+        component: SparklingNightView,
+      },
+      {
+        path: "/SceneryOfSpring",
+        name: "SceneryOfSpring",
+        component: SceneryOfSpring,
+      },
+      {
+        path: "/SceneryOfSummer",
+        name: "SceneryOfSummer",
+        component: SceneryOfSummer,
+      },
+      {
+        path: "/SceneryOfAutumn",
+        name: "SceneryOfAutumn",
+        component: SceneryOfAutumn,
+      },
+      {
+        path: "/SceneryOfWinter",
+        name: "SceneryOfWinter",
+        component: SceneryOfWinter,
+      },
+    ],
   },
   // {
   //   path: "/exampleTheme",

@@ -17,7 +17,7 @@
           {
             id: '1',
             name: '热气球节',
-            value: 'hotAirBalloon'
+            value: 'HotAirBalloon'
           },
           // {
           //   id: '2',
@@ -30,7 +30,7 @@
           {
             id: '4',
             name: '热带鱼乐园',
-            value: 'paradiseTropicalFish'
+            value: 'ParadiseTropicalFish'
           },
           // {
           //   id: '5',
@@ -59,7 +59,7 @@
           {
             id: '11',
             name: '欢乐复活节',
-            value: 'happyEaster'
+            value: 'HappyEaster'
           },
           // {
           //   id: '12',
@@ -72,7 +72,7 @@
           {
             id: '14',
             name: '七彩肥皂泡',
-            value: 'rainbowSoapBubbles'
+            value: 'RainbowSoapBubbles'
           },
           // {
           //   id: '15',
@@ -81,8 +81,48 @@
           {
             id: '34',
             name: '马尔代夫海滩',
-            value: 'beachResortMaldives'
+            value: 'BeachResortMaldives'
           },
+          {
+            id: '38',
+            name: '薰衣草香气',
+            value: 'ScentOfLavender'
+          },
+          {
+            id: '41',
+            name: '少女的祈祷',
+            value: 'MaidensPrayer'
+          },
+          {
+            id: '59',
+            name: '串珠挂饰',
+            value: 'BeadworkPendantSouvenirs'
+          },
+          {
+            id: '71',
+            name: '辉煌夜景',
+            value: 'SparklingNightView'
+          },
+          {
+            id: '76',
+            name: '春季风景',
+            value: 'SceneryOfSpring'
+          },
+          {
+            id: '78',
+            name: '夏季风景',
+            value: 'SceneryOfSummer'
+          },
+          {
+            id: '80',
+            name: '秋季风景',
+            value: 'SceneryOfAutumn'
+          },
+          {
+            id: '82',
+            name: '冬季风景',
+            value: 'SceneryOfWinter'
+          }
         ]
       }
     },

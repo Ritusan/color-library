@@ -4,14 +4,14 @@
 </template>
 
 <script>
-import topBar from './components/topBar.vue'
+import TopBar from "./components/TopBar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    topBar
-  }
-}
+    TopBar,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -23,7 +23,8 @@ export default {
   color: #2c3e50;
   margin-top: 56px;
 }
-html,body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -31,7 +32,7 @@ a {
   // color:#2d74bb;
   color: #ef7c21;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
   &:hover {
     // color: #00b6dd;
     color: #f8ba62;
