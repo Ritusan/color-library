@@ -122,7 +122,22 @@
             id: '82',
             name: '冬季风景',
             value: 'SceneryOfWinter'
-          }
+          },
+          {
+            id: '93',
+            name: '法国薰衣草田',
+            value: 'ProvenceFrance'
+          },
+          {
+            id: '94',
+            name: '希腊爱琴海',
+            value: 'SantoriniGreece'
+          },
+          // {
+          //   id: '94',
+          //   name: '希腊爱琴海',
+          //   value: 'SantoriniGreece'
+          // },
         ]
       }
     },
@@ -150,6 +165,7 @@
   width: 200px;
   background: #eaf6fd;
   text-align: left;
+  overflow: auto;
   .sidebar-item {
     padding: 10px;
     cursor: pointer;

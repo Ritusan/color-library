@@ -9,40 +9,40 @@
   </div>
   <div class="two-color-wrap">
     <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
-      <div :style="{'background-color': oneColorList[1].color}">{{oneColorList[1].color}}</div>
-    </div>
-    <div class="two-color-item">
       <div :style="{'background-color': oneColorList[0].color}">{{oneColorList[0].color}}</div>
+      <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
+    </div>
+    <div class="two-color-item">
+      <div :style="{'background-color': oneColorList[1].color}">{{oneColorList[2].color}}</div>
       <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[4].color}">{{oneColorList[4].color}}</div>
-      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div>
-      <div :style="{'background-color': oneColorList[4].color}">{{oneColorList[4].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[4].color}">{{oneColorList[4].color}}</div>
-      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
     </div>
     <div class="two-color-item">
       <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
-      <div :style="{'background-color': oneColorList[7].color}">{{oneColorList[7].color}}</div>
+      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
     </div>
     <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
-      <div :style="{'background-color': oneColorList[8].color}">{{oneColorList[8].color}}</div>
+      <div :style="{'background-color': oneColorList[1].color}">{{oneColorList[1].color}}</div>
+      <div :style="{'background-color': oneColorList[4].color}">{{oneColorList[4].color}}</div>
+    </div>
+    <div class="two-color-item">
+      <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
+      <div :style="{'background-color': oneColorList[0].color}">{{oneColorList[0].color}}</div>
     </div>
     <div class="two-color-item">
       <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div>
       <div :style="{'background-color': oneColorList[6].color}">{{oneColorList[6].color}}</div>
     </div>
     <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[0].color}">{{oneColorList[0].color}}</div>
       <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
+      <div :style="{'background-color': oneColorList[8].color}">{{oneColorList[8].color}}</div>
+    </div>
+    <div class="two-color-item">
+      <div :style="{'background-color': oneColorList[0].color}">{{oneColorList[0].color}}</div>
+      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
+    </div>
+    <div class="two-color-item">
+      <div :style="{'background-color': oneColorList[7].color}">{{oneColorList[7].color}}</div>
+      <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div>
     </div>
   </div>
 </template>
@@ -54,48 +54,48 @@
         oneColorList: [
           {
             id: 1,
-            name: "新雪",
-            color: "#f7fafc",
+            name: "法国薰衣草",
+            color: "#b08aba",
           },
           {
             id: 2,
-            name: "冰棱",
-            color: "#d3e7f7",
+            name: "宽叶薰衣草",
+            color: "#a59ac3",
           },
           {
             id: 3,
-            name: "北风",
-            color: "#a1b1ca",
+            name: "薰衣草精油",
+            color: "#8376b5",
           },
           {
             id: 4,
-            name: "柴薪",
-            color: "#a78f6b",
+            name: "薰衣草香囊",
+            color: "#e1d7e6",
           },
           {
             id: 5,
-            name: "暴风雪",
-            color: "#e5ebee",
+            name: "火烈鸟🦩",
+            color: "#fce2cc",
           },
           {
             id: 6,
-            name: "冬至",
-            color: "#525457",
+            name: "粉色葡萄酒🍷",
+            color: "#e7b39e",
           },
           {
             id: 7,
-            name: "暖炉",
-            color: "#f7deaf",
+            name: "赭色",
+            color: "#d59f67",
           },
           {
             id: 8,
-            name: "祭礼",
-            color: "#ae2b2d",
+            name: "睡美人",
+            color: "#a5c5ec",
           },
           {
             id: 9,
-            name: "元旦旭日",
-            color: "#ef8457",
+            name: "深蓝海岸",
+            color: "#86a7ca",
           },
         ],
       }

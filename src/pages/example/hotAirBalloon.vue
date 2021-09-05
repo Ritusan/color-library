@@ -1,48 +1,65 @@
 <template>
-  <div class="one-color-wrap">
-    <div class="one-color-item" 
-      v-for="(item,index) in oneColorList" :key="index"
-      :style="{'background-color': item.color}">
-      <span>{{item.name}}</span>
-      <span>{{item.color}}</span>
+  <div class="color-view">
+    <div class="one-color-wrap">
+      <div class="one-color-item" 
+        v-for="(item,index) in oneColorList" :key="index"
+        :style="{'background-color': item.color}">
+        <span>{{item.name}}</span>
+        <span>{{item.color}}</span>
+      </div>
     </div>
-  </div>
-  <div class="two-color-wrap">
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[0].color}">{{oneColorList[0].color}}</div>
-      <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
+    <div class="two-color-wrap type1">
+      <div class="two-color-item" :style="{'background-color': oneColorList[3].color}">
+        <div :style="{'background-color': oneColorList[0].color}">
+          <span :style="{'color': oneColorList[3].color}">{{oneColorList[0].color}}</span>
+        </div>
+        <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
+      </div>
+      <div class="two-color-item" :style="{'background-color': oneColorList[6].color}">
+        <div :style="{'background-color': oneColorList[5].color}">
+          <span :style="{'color': oneColorList[6].color}">{{oneColorList[5].color}}</span>
+        </div>
+        <div :style="{'background-color': oneColorList[6].color}">{{oneColorList[6].color}}</div>
+      </div>
+      <div class="two-color-item" :style="{'background-color': oneColorList[7].color}">
+        <div :style="{'background-color': oneColorList[3].color}">
+          <span :style="{'color': oneColorList[7].color}">{{oneColorList[3].color}}</span>
+        </div>
+        <div :style="{'background-color': oneColorList[7].color}">{{oneColorList[7].color}}</div>
+      </div>
+      
+      
     </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
-      <div :style="{'background-color': oneColorList[6].color}">{{oneColorList[6].color}}</div>
+    <div class="two-color-wrap type2">
+      <div class="two-color-item">
+        <!-- <div :style="{'background-color': oneColorList[6].color}">{{oneColorList[6].color}}</div> -->
+        <!-- <div :style="{'background-color': oneColorList[7].color}">{{oneColorList[7].color}}</div> -->
+        <div :style="{'background': oneColorList[6].bgColor}">{{oneColorList[7].color}}</div>
+      </div>
+      <div class="two-color-item">
+        <!-- <div :style="{'background-color': oneColorList[8].color}">{{oneColorList[8].color}}</div> -->
+        <!-- <div :style="{'background-color': oneColorList[1].color}">{{oneColorList[1].color}}</div> -->
+        <div :style="{'background': oneColorList[8].bgColor}">{{oneColorList[1].color}}</div>
+      </div>
+      <div class="two-color-item">
+        <!-- <div :style="{'background-color': oneColorList[4].color}">{{oneColorList[4].color}}</div> -->
+        <!-- <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div> -->
+        <div :style="{'background': oneColorList[4].bgColor}">{{oneColorList[2].color}}</div>
+      </div>
     </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
-      <div :style="{'background-color': oneColorList[7].color}">{{oneColorList[7].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[6].color}">{{oneColorList[6].color}}</div>
-      <div :style="{'background-color': oneColorList[7].color}">{{oneColorList[7].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[8].color}">{{oneColorList[8].color}}</div>
-      <div :style="{'background-color': oneColorList[1].color}">{{oneColorList[1].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[4].color}">{{oneColorList[4].color}}</div>
-      <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[8].color}">{{oneColorList[8].color}}</div>
-      <div :style="{'background-color': oneColorList[0].color}">{{oneColorList[0].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[6].color}">{{oneColorList[6].color}}</div>
-      <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div>
-    </div>
-    <div class="two-color-item">
-      <div :style="{'background-color': oneColorList[3].color}">{{oneColorList[3].color}}</div>
-      <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div>
+    <div class="two-color-wrap type3">
+      <div class="two-color-item" :style="{'background-color': oneColorList[8].color}">
+        <div :style="{'background-image': oneColorList[8].bgImage}">{{oneColorList[8].color}}</div>
+        <!-- <div :style="{'background-color': oneColorList[0].color}">{{oneColorList[0].color}}</div> -->
+      </div>
+      <div class="two-color-item" :style="{'background-color': oneColorList[6].color}">
+        <div :style="{'background-image': oneColorList[6].bgImage}">{{oneColorList[6].color}}</div>
+        <!-- <div :style="{'background-color': oneColorList[2].color}">{{oneColorList[2].color}}</div> -->
+      </div>
+      <div class="two-color-item" :style="{'background-color': oneColorList[3].color}">
+        <div :style="{'background-image': oneColorList[3].bgImage}">{{oneColorList[3].color}}</div>
+        <!-- <div :style="{'background-color': oneColorList[5].color}">{{oneColorList[5].color}}</div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -71,11 +88,13 @@
             id: 4,
             name: "骄阳黄",
             color: "#ffdc00",
+            bgImage: "radial-gradient(#f5fafe 20%,transparent 0)"
           },
           {
             id: 5,
             name: "晴空蓝",
             color: "#51a5dc",
+            bgColor: "linear-gradient(#51a5dc 50%,#ee7700 50%)"
           },
           {
             id: 6,
@@ -86,6 +105,8 @@
             id: 7,
             name: "天青石蓝",
             color: "#261f87",
+            bgColor: "linear-gradient(#261f87 50%,#008554 50%)",
+            bgImage: "radial-gradient(#ee7700 20%,transparent 0)"
           },
           {
             id: 8,
@@ -96,6 +117,8 @@
             id: 9,
             name: "拂晓浅蓝",
             color: "#c2e5f9",
+            bgColor: "linear-gradient(#c2e5f9 50%,#ea5404 50%)",
+            bgImage: "radial-gradient(#008db7 20%,transparent 0)"
           },
         ],
       }
@@ -117,12 +140,26 @@
   align-items: center;
   justify-content: center;
 }
-.two-color-wrap {
+.two-color-wrap.type1,
+.two-color-wrap.type2,
+.two-color-wrap.type3 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+.two-color-wrap.type1 {
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-bottom: 20px;
+  
+  .two-color-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 8px;
+  }
   .two-color-item div {
-    width: 100px;
+    width: 140px;
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -131,10 +168,62 @@
     &:nth-child(1) {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+      border-radius: 0 0 50% 50%;
+      position: absolute;
+      height: 80px;
+      top: -13px;
     }
     &:nth-child(2) {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
+      color: transparent;
+      height: 100px;
+    }
+  }
+}
+.two-color-wrap.type2 {
+  .two-color-item {
+    width: 140px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 8px;
+  }
+  .two-color-item div {
+    width: 140px;
+    height: 100px;
+    background-size: 100% 25px!important;
+    &:nth-child(1) {
+      color: transparent;
+    }
+    &:nth-child(2) {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: transparent;
+      height: 100px;
+    }
+  }
+}
+.two-color-wrap.type3 {
+  .two-color-item {
+    width: 140px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 8px;
+  }
+  .two-color-item div {
+    width: 140px;
+    height: 100px;
+    background-size: 35px 35px!important;
+    &:nth-child(1) {
+      color: transparent;
+    }
+    &:nth-child(2) {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: transparent;
+      height: 100px;
     }
   }
 }

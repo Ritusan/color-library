@@ -18,6 +18,8 @@ const SceneryOfSpring = () => import("../pages/example/SceneryOfSpring")
 const SceneryOfSummer = () => import("../pages/example/SceneryOfSummer")
 const SceneryOfAutumn = () => import("../pages/example/SceneryOfAutumn")
 const SceneryOfWinter = () => import("../pages/example/SceneryOfWinter")
+const ProvenceFrance = () => import("../pages/example/ProvenceFrance")
+const SantoriniGreece = () => import("../pages/example/SantoriniGreece")
 
 const routes = [
   {
@@ -104,6 +106,16 @@ const routes = [
         path: "/SceneryOfWinter",
         name: "SceneryOfWinter",
         component: SceneryOfWinter,
+      },
+      {
+        path: "/ProvenceFrance",
+        name: "ProvenceFrance",
+        component: ProvenceFrance,
+      },
+      {
+        path: "/SantoriniGreece",
+        name: "SantoriniGreece",
+        component: SantoriniGreece,
       },
     ],
   },

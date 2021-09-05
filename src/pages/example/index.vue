@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import SideBar from "../../components/SideBar.vue";
+import SideBar from "@/components/SideBar.vue"
 
 export default {
   name: "App",
@@ -16,9 +16,9 @@ export default {
     SideBar,
   },
   data() {
-    return {};
+    return {}
   },
-};
+}
 </script>
 
 <style lang="scss" scoped></style>
