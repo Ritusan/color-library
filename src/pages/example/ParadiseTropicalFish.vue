@@ -1,26 +1,24 @@
 <template>
-  <div class="color-example">
-    <color-example 
-      :one="one"
-      :two1="two1"
-      :two2="two2"
-      :two3="two3">
-    </color-example>
-  </div>
+  <color-example 
+    :one="one"
+    :two1="two1"
+    :two2="two2"
+    :two3="two3">
+  </color-example>
 </template>
 
 <script>
 
 import ColorExample from "@/components/ColorExample"
-import {oneList,twoListType1,twoListType2,twoListType3} from "@/utils/colorful/paradiseTropicalFish"
+import {getColorList} from "@/utils/colorful/ParadiseTropicalFish"
 
   export default {
     data(){
       return {
-        one: oneList,
-        two1: twoListType1,
-        two2: twoListType2,
-        two3: twoListType3
+        one: getColorList().oneList,
+        two1: getColorList().twoListType1,
+        two2: getColorList().twoListType2,
+        two3: getColorList().twoListType3
       }
     },
     components: {
