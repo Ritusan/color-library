@@ -10,7 +10,7 @@
 <script>
 
 import ColorExample from "@/components/ColorExample"
-import {getColorList} from "@/utils/colorful/ParadiseTropicalFish"
+import { getColorList } from "@/utils/colorful/ParadiseTropicalFish"
 
   export default {
     data(){
