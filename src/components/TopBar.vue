@@ -4,6 +4,7 @@
       <router-link :to="{ name: 'colorful' }" class="">单色</router-link>
       <router-link :to="{ name: 'ColorMatchChart' }">颜色组合</router-link>
       <router-link :to="{ name: 'exampleColor' }">实例</router-link>
+      <router-link :to="{ name: 'TodoList' }">Vue3实例</router-link>
     </div>
   </div>
 </template>

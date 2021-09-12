@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router"
 
 const colorful = () => import("../pages/colorful")
 const ColorMatchChart = () => import("../pages/colorful/ColorMatchChart")
+const TodoList = () => import("../pages/todoList")
 
 const exampleColor = () => import("../pages/example")
 const exampleTheme = () => import("../pages/example/theme")
@@ -31,6 +32,11 @@ const routes = [
     path: "/ColorMatchChart",
     name: "ColorMatchChart",
     component: ColorMatchChart,
+  },
+  {
+    path: "/todoList",
+    name: "TodoList",
+    component: TodoList,
   },
   {
     path: "/exampleColor",
