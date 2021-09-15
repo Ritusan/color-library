@@ -5,6 +5,7 @@
       <router-link :to="{ name: 'ColorMatchChart' }">颜色组合</router-link>
       <router-link :to="{ name: 'exampleColor' }">实例</router-link>
       <router-link :to="{ name: 'TodoList' }">Vue3实例</router-link>
+      <router-link :to="{ name: 'ThemeChange' }">主题切换</router-link>
     </div>
   </div>
 </template>

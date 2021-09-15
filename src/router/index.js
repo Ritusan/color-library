@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from "vue-router"
 const colorful = () => import("../pages/colorful")
 const ColorMatchChart = () => import("../pages/colorful/ColorMatchChart")
 const TodoList = () => import("../pages/todoList")
+const ThemeChange = () => import("../pages/theme")
 
 const exampleColor = () => import("../pages/example")
 const exampleTheme = () => import("../pages/example/theme")
@@ -37,6 +38,11 @@ const routes = [
     path: "/todoList",
     name: "TodoList",
     component: TodoList,
+  },
+  {
+    path: "/ThemeChange",
+    name: "ThemeChange",
+    component: ThemeChange,
   },
   {
     path: "/exampleColor",
