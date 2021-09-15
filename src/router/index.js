@@ -40,6 +40,7 @@ const routes = [
   },
   {
     path: "/exampleColor",
+    redirect: "/HotAirBalloon",
     name: "exampleColor",
     component: exampleColor,
     children: [

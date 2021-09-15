@@ -83,9 +83,10 @@ import { useStore } from 'vuex'
 }
 .list-item-wrap {
   padding: 16px;
+  display: flex;
+  justify-content: center;
   .list-item {
     text-align: left;
   }
 }
-
 </style>

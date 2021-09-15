@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar" :style="{height:sideBarHeight + 'px'}">
-    <div class="sidebar-item" v-for="(item,index) in dataList" :key="index" @click="sideBarClick(item)">
+    <div class="sidebar-item" :class="{'item-active':item.active}" v-for="(item,index) in dataList" :key="index" @click="sideBarClick(item)">
       <span>
         {{item.name}}
       </span>
@@ -13,11 +13,13 @@
     data(){
       return {
         sideBarHeight: 500,
+        activeClass: false,
         dataList: [
           {
             id: '1',
             name: '热气球节',
-            value: 'HotAirBalloon'
+            value: 'HotAirBalloon',
+            active: false
           },
           // {
           //   id: '2',
@@ -30,7 +32,8 @@
           {
             id: '4',
             name: '热带鱼乐园',
-            value: 'ParadiseTropicalFish'
+            value: 'ParadiseTropicalFish',
+            active: false
           },
           // {
           //   id: '5',
@@ -59,7 +62,8 @@
           {
             id: '11',
             name: '欢乐复活节',
-            value: 'HappyEaster'
+            value: 'HappyEaster',
+            active: false
           },
           // {
           //   id: '12',
@@ -72,7 +76,8 @@
           {
             id: '14',
             name: '七彩肥皂泡',
-            value: 'RainbowSoapBubbles'
+            value: 'RainbowSoapBubbles',
+            active: false
           },
           // {
           //   id: '15',
@@ -81,57 +86,68 @@
           {
             id: '34',
             name: '马尔代夫海滩',
-            value: 'BeachResortMaldives'
+            value: 'BeachResortMaldives',
+            active: false
           },
           {
             id: '38',
             name: '薰衣草香气',
-            value: 'ScentOfLavender'
+            value: 'ScentOfLavender',
+            active: false
           },
           {
             id: '41',
             name: '少女的祈祷',
-            value: 'MaidensPrayer'
+            value: 'MaidensPrayer',
+            active: false
           },
           {
             id: '59',
             name: '串珠挂饰',
-            value: 'BeadworkPendantSouvenirs'
+            value: 'BeadworkPendantSouvenirs',
+            active: false
           },
           {
             id: '71',
             name: '辉煌夜景',
-            value: 'SparklingNightView'
+            value: 'SparklingNightView',
+            active: false
           },
           {
             id: '76',
             name: '春季风景',
-            value: 'SceneryOfSpring'
+            value: 'SceneryOfSpring',
+            active: false
           },
           {
             id: '78',
             name: '夏季风景',
-            value: 'SceneryOfSummer'
+            value: 'SceneryOfSummer',
+            active: false
           },
           {
             id: '80',
             name: '秋季风景',
-            value: 'SceneryOfAutumn'
+            value: 'SceneryOfAutumn',
+            active: false
           },
           {
             id: '82',
             name: '冬季风景',
-            value: 'SceneryOfWinter'
+            value: 'SceneryOfWinter',
+            active: false
           },
           {
             id: '93',
             name: '法国薰衣草田',
-            value: 'ProvenceFrance'
+            value: 'ProvenceFrance',
+            active: false
           },
           {
             id: '94',
             name: '希腊爱琴海',
-            value: 'SantoriniGreece'
+            value: 'SantoriniGreece',
+            active: false
           },
           // {
           //   id: '94',
@@ -143,14 +159,25 @@
     },
     mounted() {
       this.sideBarHeight = document.documentElement.clientHeight - 56
-      console.log(document.documentElement.clientHeight)
-      console.log(this.sideBarHeight)
-      console.log(this.$router)
+      console.log(this.$route.name)
+      this.dataList.map((item)=>{
+        item.active = false
+        if(this.$route.name == item.value){
+          item.active = true
+        }
+      })
     },
     methods: {
       sideBarClick(item){
         this.$router.push({
           name: item.value
+        }).then(()=>{
+          this.dataList.map((el,index)=>{
+            el.active = false
+          })
+          if(this.$route.name == item.value){
+            item.active = true
+          }  
         })
       }
     }
@@ -169,6 +196,9 @@
   .sidebar-item {
     padding: 10px;
     cursor: pointer;
+  }
+  .item-active {
+    background: #9fd8ee;
   }
 }
 </style>
