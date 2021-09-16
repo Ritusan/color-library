@@ -1,13 +1,12 @@
 <template>
   <div :class="themeClass" :style="{ height: height + 'px' }" class="theme-change">
-    <!-- <span class="title" @click="handleChangeTheme('red')">主题切换</span> -->
-    <span class="title" @click="handleChangeTheme('red')" style="color: #eb6663">红色</span>
-    <span class="title" @click="handleChangeTheme('orange')" style="color: #f8ba62">橙色</span>
-    <span class="title" @click="handleChangeTheme('yellow')" style="color: #f7ca11">黄色</span>
-    <span class="title" @click="handleChangeTheme('green')" style="color: #43a28c">绿色</span>
-    <span class="title" @click="handleChangeTheme('cyan')" style="color: #72c6c7">青色</span>
-    <span class="title" @click="handleChangeTheme('blue')" style="color: #84b9e5">蓝色</span>
-    <span class="title" @click="handleChangeTheme('purple')" style="color: #b08aba">紫色</span>
+      <span class="title"
+        v-for="(item,index) in colorList"
+        :key="index"
+        @click="handleChangeTheme(item.value)" 
+        :style="{color: item.color}">
+        {{ item.name }}
+      </span>
     <br />
     <span class="text">用来演示渐变文字~</span>
   </div>
@@ -20,6 +19,43 @@ export default {
     return {
       height: 500,
       themeClass: "red-theme",
+      colorList: [
+        {
+          name: '红色',
+          value: 'red',
+          color: '#eb6663'
+        },
+        {
+          name: '橙色',
+          value: 'orange',
+          color: '#f8ba62'
+        },
+        {
+          name: '黄色',
+          value: 'yellow',
+          color: '#f7ca11'
+        },
+        {
+          name: '绿色',
+          value: 'green',
+          color: '#43a28c'
+        },
+        {
+          name: '青色',
+          value: 'cyan',
+          color: '#72c6c7'
+        },
+        {
+          name: '蓝色',
+          value: 'blue',
+          color: '#84b9e5'
+        },
+        {
+          name: '紫色',
+          value: 'purple',
+          color: '#b08aba'
+        },
+      ]
     }
   },
   mounted() {
@@ -27,31 +63,7 @@ export default {
   },
   methods: {
     handleChangeTheme(theme) {
-      switch(theme){
-        case 'red':
-          this.themeClass = 'red-theme'
-          break
-        case 'orange':
-          this.themeClass = 'orange-theme'
-          break
-        case 'yellow':
-          this.themeClass = 'yellow-theme'
-          break
-        case 'green':
-          this.themeClass = 'green-theme'
-          break
-        case 'cyan':
-          this.themeClass = 'cyan-theme'
-          break
-        case 'blue':
-          this.themeClass = 'blue-theme'
-          break
-        case 'purple':
-          this.themeClass = 'purple-theme'
-          break
-        default: 
-          this.themeClass = 'purple-theme'
-      }
+      this.themeClass = theme + '-theme'
     },
   },
 }
