@@ -4,6 +4,7 @@ const colorful = () => import("../pages/colorful")
 const ColorMatchChart = () => import("../pages/colorful/ColorMatchChart")
 const TodoList = () => import("../pages/todoList")
 const ThemeChange = () => import("../pages/theme")
+const timeline = () => import("../pages/timeline")
 
 const exampleColor = () => import("../pages/example")
 const exampleTheme = () => import("../pages/example/theme")
@@ -43,6 +44,11 @@ const routes = [
     path: "/ThemeChange",
     name: "ThemeChange",
     component: ThemeChange,
+  },
+  {
+    path: "/timeline",
+    name: "timeline",
+    component: timeline,
   },
   {
     path: "/exampleColor",
