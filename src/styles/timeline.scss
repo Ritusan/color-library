@@ -1,0 +1,36 @@
+$base-color: #84b9e5;
+
+.timeline-wrap {
+  padding: 16px;
+  .timeline-header {
+    padding-bottom: 16px;
+    span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .timeline-item {
+    padding: 0px 10px 20px 16px;
+    border-left: 1px solid $base-color;
+    line-height: 1;
+    position: relative;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      border: 1px solid $base-color;
+      border-radius: 50%;
+      background: #fff;
+    }
+    .timeline-item-time {
+      margin-bottom: 8px;
+    }
+    .timeline-item-content {
+
+    }
+  }
+}
