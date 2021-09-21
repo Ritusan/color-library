@@ -21,16 +21,42 @@ $base-color: #84b9e5;
       height: 6px;
       position: absolute;
       left: -4px;
-      top: -4px;
+      top: 0px;
       border: 1px solid $base-color;
       border-radius: 50%;
       background: #fff;
     }
+    .item-version {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 0.6em;
+    }
     .timeline-item-time {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      code {
+        margin: 0 1px;
+        padding: .2em .4em;
+        font-size: .9em;
+        background: #f2f4f5;
+        border: 1px solid #f0f0f0;
+        border-radius: 3px
+      }
+      .item-weather {
+        font-size: 14px;
+      }
     }
     .timeline-item-content {
-
+      font-size: 14px;
+      .subItem-title {
+        padding: 8px 0;
+        display: block;
+        color: #000;
+      }
+      .subItem-children {
+        line-height: 1;
+        text-indent: 1em;
+        padding: 7px 0;
+      }
     }
   }
 }

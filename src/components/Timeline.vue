@@ -4,12 +4,20 @@
       <span>更新日志</span>
     </div>
     <div class="timeline-item" v-for="(item,index) in dataList" :key="index">
+      <div class="item-version">
+        <span>{{ item.version }}</span>
+      </div>
       <div class="timeline-item-time">
-        <span>{{ item.date }}</span>
-        <span>{{ item.weather }}</span>
+        <code>{{ item.date }}</code>
+        <span class="item-weather">{{ item.weather }}</span>
       </div>
       <div class="timeline-item-content">
-        <span>{{ item.content }}</span>
+        <div v-for="(subItem,subIndex) in item.body" :key="subIndex">
+          <span class="subItem-title">{{ subItem.title }}</span>
+          <div class="subItem-children">
+            <span v-for="(threeItem,threeIndex) in subItem.children" :key="threeIndex">{{ threeItem.content }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -22,29 +30,149 @@
       return {
         dataList: [
           {
+            version: '2.0.0',
             date: '2021/09/10',
             weather: '晴天☀️',
-            content: '第一版正式发布'
+            body: [
+              {
+                title: '第一版正式发布',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              },
+              {
+                title: '添加了时间轴',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              }
+            ]
           },
           {
+            version: '1.2.0',
             date: '2021/09/12',
-            weather: '晴天☀️',
-            content: '第一版正式发布'
+            weather: '阴天☁️',
+            body: [
+              {
+                title: '第一版正式发布',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              },
+              {
+                title: '添加了时间轴',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              }
+            ]
           },
           {
+            version: '1.1.1',
             date: '2021/09/13',
-            weather: '晴天☀️',
-            content: '第一版正式发布'
+            weather: '雨天☔️',
+            body: [
+              {
+                title: '第一版正式发布',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              },
+              {
+                title: '添加了时间轴',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              }
+            ]
           },
           {
+            version: '1.1.0',
             date: '2021/09/15',
-            weather: '晴天☀️',
-            content: '第一版正式发布'
+            weather: '下雪❄️',
+            body: [
+              {
+                title: '第一版正式发布',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              },
+              {
+                title: '添加了时间轴',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              }
+            ]
           },
           {
+            version: '1.0.0',
             date: '2021/09/20',
             weather: '晴天☀️',
-            content: '第一版正式发布'
+            body: [
+              {
+                title: '第一版正式发布',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              },
+              {
+                title: '添加了时间轴',
+                children: [
+                  {
+                    content: 'add timeline'
+                  },
+                  {
+                    content: 'add colorful'
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
