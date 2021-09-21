@@ -185,20 +185,5 @@
 </script>
 
 <style lang="scss" scoped>
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 56px;
-  width: 200px;
-  background: #eaf6fd;
-  text-align: left;
-  overflow: auto;
-  .sidebar-item {
-    padding: 10px;
-    cursor: pointer;
-  }
-  .item-active {
-    background: #9fd8ee;
-  }
-}
+@import "@/styles/sidebar.scss";
 </style>
