@@ -1,7 +1,7 @@
 $base-color: #84b9e5;
 
 .timeline-wrap {
-  padding: 16px;
+  padding: 20px 40px;
   .timeline-header {
     padding-bottom: 16px;
     span {
@@ -25,6 +25,7 @@ $base-color: #84b9e5;
       border: 1px solid $base-color;
       border-radius: 50%;
       background: #fff;
+      background: $base-color;
     }
     .item-version {
       font-size: 24px;
@@ -48,14 +49,33 @@ $base-color: #84b9e5;
     .timeline-item-content {
       font-size: 14px;
       .subItem-title {
-        padding: 8px 0;
+        padding: 8px 0 8px 12px;
         display: block;
         color: #000;
+        position: relative;
+        // margin-left: 12px;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          position: absolute;
+          left: 0px;
+          top: 10px;
+          border: 1px solid $base-color;
+          border-radius: 50%;
+          background: #fff;
+        }
       }
       .subItem-children {
         line-height: 1;
         text-indent: 1em;
-        padding: 7px 0;
+        padding: 7px 0 0 7px;
+        span {
+          display: block;
+          margin-bottom: 8px;
+          text-indent: 2em;
+        }
       }
     }
   }
