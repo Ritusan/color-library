@@ -5,17 +5,17 @@
     </div>
     <div class="timeline-item" v-for="(item,index) in dataList" :key="index">
       <div class="item-version">
-        <span>{{ item.version }}</span>
+        <span>{{ item.year }}</span>
       </div>
-      <div class="timeline-item-time">
+      <!-- <div class="timeline-item-time">
         <code>{{ item.date }}</code>
         <span class="item-weather" v-if="showWeather">{{ item.weather }}</span>
-      </div>
+      </div> -->
       <div class="timeline-item-content">
         <div v-for="(subItem,subIndex) in item.body" :key="subIndex">
-          <span class="subItem-title">{{ subItem.title }}</span>
+          <span class="subItem-title">{{ subItem.month }}</span>
           <div class="subItem-children">
-            <span v-for="(threeItem,threeIndex) in subItem.children" :key="threeIndex">{{ threeItem.content }}</span>
+            <span v-for="(threeItem,threeIndex) in subItem.children" :key="threeIndex">{{ threeItem.title }}</span>
           </div>
         </div>
       </div>

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <log-timeline></log-timeline>
+    <log-timeline
+      :title="title" 
+      :data-list="dataList"
+      :show-weather="showWeather">
+    </log-timeline>
   </div>
 </template>
 
@@ -23,7 +27,7 @@ import LogTimeline from '@/components/LogTimeline'
             weather: '晴天☀️',
             body: [
               {
-                title: '第一版正式发布',
+                title: '第二版正式发布',
                 children: [
                   {
                     content: 'add timeline'
@@ -34,13 +38,10 @@ import LogTimeline from '@/components/LogTimeline'
                 ]
               },
               {
-                title: '添加了时间轴',
+                title: '添加了主题切换',
                 children: [
                   {
-                    content: 'add timeline'
-                  },
-                  {
-                    content: 'add colorful'
+                    content: 'add theme change'
                   }
                 ]
               }
