@@ -30,7 +30,7 @@ body {
 }
 a {
   // color:#2d74bb;
-  color: #ef7c21;
+  color: #84b9e5;
   text-decoration: none;
   transition: 0.3s;
   &:hover {
