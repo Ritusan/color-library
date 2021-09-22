@@ -7,6 +7,7 @@
       <router-link :to="{ name: 'TodoList' }">Vue3实例</router-link>
       <router-link :to="{ name: 'ThemeChange' }">主题切换</router-link>
       <router-link :to="{ name: 'timeline' }">时间轴</router-link>
+      <router-link :to="{ name: 'logTimeline' }">更新日志</router-link>
     </div>
   </div>
 </template>

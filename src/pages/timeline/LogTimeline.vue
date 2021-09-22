@@ -1,18 +1,16 @@
 <template>
   <div>
-    <Timeline 
-      :title="title" 
-      :data-list="dataList"
-      :show-weather="showWeather"></Timeline>
+    <log-timeline></log-timeline>
   </div>
 </template>
 
 <script>
-import Timeline from '@/components/Timeline'
+import LogTimeline from '@/components/LogTimeline'
+
   export default {
-    name: 'timeline',
+    name: '',
     components: {
-      Timeline
+      LogTimeline
     },
     data() {
       return {
