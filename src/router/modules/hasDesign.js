@@ -4,13 +4,16 @@ const TwoColors = () => import("../../pages/hasDesign/TwoColors")
 const hasDesignRoute = [
   {
     path: "/HasDesign",
+    redirect: "/TwoColors",
     name: "HasDesign",
     component: HasDesign,
-  },
-  {
-    path: "/TwoColors",
-    name: "TwoColors",
-    component: TwoColors,
+    children: [
+      {
+        path: "/TwoColors",
+        name: "TwoColors",
+        component: TwoColors,
+      }
+    ]
   }
 ]
 

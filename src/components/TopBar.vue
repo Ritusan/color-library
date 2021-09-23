@@ -3,7 +3,7 @@
     <div class="router-nav">
       <router-link :to="{ name: 'colorful' }" class="">单色</router-link>
       <router-link :to="{ name: 'ColorMatchChart' }">颜色组合</router-link>
-      <router-link :to="{ name: 'exampleColor' }">实例</router-link>
+      <router-link :to="{ name: 'exampleColor' }">color实例</router-link>
       <router-link :to="{ name: 'TodoList' }">Vue3实例</router-link>
       <router-link :to="{ name: 'ThemeChange' }">主题切换</router-link>
       <router-link :to="{ name: 'timeline' }">时间轴</router-link>
