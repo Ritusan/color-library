@@ -1,0 +1,23 @@
+@import '@/styles/hasDesign/HasDesign.scss';
+
+.quarter-rule {
+  .left-box {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid $base-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: $base-color;
+    font-weight: 900;
+    .letter {
+      transform: rotate(90deg);
+      padding-left: 50px;
+      &:last-child {
+        padding-left: 210px;
+      }
+    }
+  }
+}
