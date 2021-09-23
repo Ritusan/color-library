@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router"
+import hasDesignRoute from './modules/hasDesign'
 
 const colorful = () => import("../pages/colorful")
 const ColorMatchChart = () => import("../pages/colorful/ColorMatchChart")
@@ -56,6 +57,7 @@ const routes = [
     name: "logTimeline",
     component: LogTimeline,
   },
+  ...hasDesignRoute,
   {
     path: "/exampleColor",
     redirect: "/HotAirBalloon",
@@ -141,7 +143,7 @@ const routes = [
         path: "/SantoriniGreece",
         name: "SantoriniGreece",
         component: SantoriniGreece,
-      },
+      }
     ],
   },
   // {
@@ -150,6 +152,9 @@ const routes = [
   //   component: exampleTheme,
   // },
 ]
+
+// routes.push(hasDesignRoute)
+console.log(routes)
 
 const router = createRouter({
   history: createWebHashHistory(),

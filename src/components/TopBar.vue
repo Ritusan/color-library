@@ -8,6 +8,7 @@
       <router-link :to="{ name: 'ThemeChange' }">主题切换</router-link>
       <router-link :to="{ name: 'timeline' }">时间轴</router-link>
       <router-link :to="{ name: 'logTimeline' }">更新日志</router-link>
+      <router-link :to="{ name: 'HasDesign' }">有呀设计</router-link>
     </div>
   </div>
 </template>
