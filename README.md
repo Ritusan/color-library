@@ -20,7 +20,7 @@
 
 <br />
 
-# color-list
+# color-library / design-library
 
 ## 初衷
 

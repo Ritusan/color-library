@@ -1,5 +1,5 @@
 <template>
-  <div class="two-colors">
+  <div class="has-design two-colors">
     <div class="item-one"></div>
     <div class="item-two">
       <div class="item-two-text">

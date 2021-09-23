@@ -1,0 +1,20 @@
+@import '@/styles/hasDesign/HasDesign.scss';
+
+$border-color: #008db7;
+
+.thick-border {
+  .border-box {
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    border: 20px solid $border-color;
+    margin: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 28px;
+    color: $border-color;
+    font-weight: 900;
+  }
+}
