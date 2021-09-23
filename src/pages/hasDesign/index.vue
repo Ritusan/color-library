@@ -27,157 +27,157 @@ export default {
         {
           id: '2',
           name: '圆形效果',
-          value: 'TwoColors',
+          value: 'CircularEffect',
           active: false
         },
         {
           id: '3',
           name: '整体围粗框',
-          value: 'TwoColors',
+          value: 'ThickBorder',
           active: false
         },
         {
           id: '4',
           name: '左起四分之一法则',
-          value: 'TwoColors',
+          value: 'QuarterRule',
           active: false
         },
         {
           id: '5',
           name: '散放三角形',
-          value: 'TwoColors',
+          value: 'ScatteredTriangle',
           active: false
         },
         {
           id: '6',
           name: '画线分段',
-          value: 'TwoColors',
+          value: 'LineSegment',
           active: false
         },
         {
           id: '7',
           name: '半透明背景',
-          value: 'TwoColors',
+          value: 'TranslucentBackground',
           active: false
         },
         {
           id: '8',
           name: '倾斜效果',
-          value: 'TwoColors',
+          value: 'TiltEffect',
           active: false
         },
         {
           id: '9',
           name: '小字装饰',
-          value: 'TwoColors',
+          value: 'SmallDecorations',
           active: false
         },
         {
           id: '10',
           name: '活用插画',
-          value: 'TwoColors',
+          value: 'UseIllustrations',
           active: false
         },
         {
           id: '11',
           name: '漂亮的拱形',
-          value: 'TwoColors',
+          value: 'BeautifulArch',
           active: false
         },
         {
           id: '12',
           name: '四周留白最棒了',
-          value: 'TwoColors',
+          value: 'WhiteAround',
           active: false
         },
         {
           id: '13',
           name: '字间留空排列',
-          value: 'TwoColors',
+          value: 'WordsBlank',
           active: false
         },
         {
           id: '14',
           name: '加一根极粗线条',
-          value: 'TwoColors',
+          value: 'AddThickline',
           active: false
         },
         {
           id: '15',
           name: '文字添框线',
-          value: 'TwoColors',
+          value: 'TextBorder',
           active: false
         },
         {
           id: '16',
           name: '带状底纹生韵律',
-          value: 'TwoColors',
+          value: 'BandedshadingRhythm',
           active: false
         },
         {
           id: '17',
           name: '对话框打造亲近感',
-          value: 'TwoColors',
+          value: 'DialogIntimacy',
           active: false
         },
         {
           id: '18',
           name: '溢出效果',
-          value: 'TwoColors',
+          value: 'SpilloverEffect',
           active: false
         },
         {
           id: '19',
           name: '铺上条带即可',
-          value: 'TwoColors',
+          value: 'SpreadStrips',
           active: false
         },
         {
           id: '20',
           name: '自然地镂空文字',
-          value: 'TwoColors',
+          value: 'HollowoutWords',
           active: false
         },
         {
           id: '21',
           name: '斜线切分',
-          value: 'TwoColors',
+          value: 'SlashSegmentation',
           active: false
         },
         {
           id: '22',
           name: '聪明的网格设计',
-         value: 'TwoColors',
+         value: 'GridDesign',
           active: false
         },
         {
           id: '23',
           name: '不知如何设计？使用条纹',
-          value: 'TwoColors',
+          value: 'UseStripes',
           active: false
         },
         {
           id: '24',
           name: '只要有单色照片就行',
-          value: 'TwoColors',
+          value: 'MonochromePhoto',
           active: false
         },
         {
           id: '25',
-          name: '可爱手绘文字',
+          name: 'HanddrawnText',
           value: 'TwoColors',
           active: false
         },
         {
           id: '26',
           name: '形似标志设计',
-          value: 'TwoColors',
+          value: 'LogoDesign',
           active: false
         },
         {
           id: '27',
           name: '各式框架',
-          value: 'TwoColors',
+          value: 'VariousFrames',
           active: false
         },
       ]
@@ -186,4 +186,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "@/styles/hasDesign/HasDesign.scss";
+</style>

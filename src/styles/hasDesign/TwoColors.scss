@@ -1,0 +1,30 @@
+$base-color: #84b9e5;
+
+.two-colors {
+  width: 500px;
+  height: 600px;
+  border: 1px solid $base-color;
+  .item-one {
+    width: 100%;
+    height: 50%;
+  }
+  .item-two {
+    width: 100%;
+    height: 50%;
+    background: $base-color;
+    display: flex;
+    .item-two-text {
+      width: 100%;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 24px;
+        display: inline-block;
+        line-height: 2;
+      }
+    }
+  }
+}
