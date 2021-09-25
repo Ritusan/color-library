@@ -1,0 +1,13 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.tilt-effect {
+  .tilt-effect-content {
+    .line-one {
+      span {
+        display: inline-block;
+        transform: translate(20px, 60px) rotate(-30deg);
+        font-size: 24px;
+      }
+    }
+  }
+}
