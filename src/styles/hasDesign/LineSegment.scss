@@ -1,0 +1,20 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.line-segment {
+  .line-segment-content {
+    padding: 20px;
+    .line-one {
+      padding-top: 20px;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: end;
+      .line-one-wrap {
+        border-bottom: 2px solid #2c3e50;
+        width: fit-content;
+      }
+    }
+    .split-line {
+      padding: 0 10px;
+    }
+  }
+}
