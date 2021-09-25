@@ -1,0 +1,49 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.small-decorations {
+  position: relative;
+  .small-decorations-content {
+    width: 70%;
+    height: 70%;
+    background: #d3e7f7;
+    transform: translate(21%, 21%);
+    .line-one {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+      letter-spacing: 4px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #fff;
+      span {
+        display: inline-block;
+      }
+    }
+  }
+  .top-text,
+  .right-text,
+  .bottom-text,
+  .left-text {
+    position: absolute;
+  }
+  .top-text {
+    top: 10px;
+    left: calc(50% - 30px);
+  }
+  .right-text {
+    right: 0px;
+    top: calc(50% - 30px);
+    transform: rotate(90deg);
+  }
+  .bottom-text {
+    bottom: 10px;
+    left: calc(50% - 30px);
+  }
+  .left-text {
+    left: 0px;
+    top: calc(50% - 30px);
+    transform: rotate(90deg);
+  }
+}
