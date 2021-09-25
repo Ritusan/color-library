@@ -1,0 +1,36 @@
+@import '@/styles/hasDesign/HasDesign.scss';
+
+$border-width: 180px;
+$bg-color: #ffdc00;
+
+.scattered-triangle {
+  .triangle-box-wrap {
+    width: 360px;
+    height: 270px;
+    transform: translate(calc(50% - 40px), 50%) rotate(25deg);
+  }
+  .triangle-box {
+    border-left: $border-width solid transparent;  
+    border-right: $border-width solid transparent;  
+    border-bottom: $border-width * 3/2 solid $bg-color;  
+    width: 0px;
+    height: 0px;
+    // transform: rotate(25deg) translate(50%, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      font-size: 20px;
+      &:first-child {
+        position: absolute;
+        top: 40%;
+        left: 40%;  
+      }
+      &:last-child {
+        position: absolute;
+        top: 50%;
+        left: 42%;  
+      }
+    }
+  }
+}
