@@ -5,7 +5,7 @@
         <div class="line-one-wrap">
           <span>2021/09/25</span>
           <span class="split-line">|</span>
-          <span>TAKE FREE</span>
+          <span>HAPPY AKIRA</span>
         </div>
       </div>
     </div>

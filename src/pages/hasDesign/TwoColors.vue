@@ -3,9 +3,9 @@
     <div class="item-one"></div>
     <div class="item-two">
       <div class="item-two-text">
-        <span>NATURAL</span>
-        <span>BEAUTY</span>
-        <span>SCIENCE</span>
+        <span>HAPPY</span>
+        <span>BIBLEE</span>
+        <span>AKIRA</span>
       </div>
     </div>
   </div>

@@ -2,8 +2,8 @@
   <div class="has-design scattered-triangle">
     <div class="triangle-box-wrap">
       <div class="triangle-box">
-        <span>GATHER</span>
-        <span>PICNIC</span>
+        <span>HAPPY</span>
+        <span>AKIRA</span>
       </div>
     </div>
   </div>

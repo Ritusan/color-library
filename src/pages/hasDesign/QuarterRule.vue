@@ -1,10 +1,10 @@
 <template>
   <div class="has-design quarter-rule">
     <div class="left-box">
-      <span>北欧</span>
-      <span>大阪</span>
-      <span class="letter">ART</span>
-      <span class="letter">PROJECT</span>
+      <span>快乐</span>
+      <span>爱德</span>
+      <span class="letter">AK</span>
+      <span class="letter">AKIRA</span>
     </div>
   </div>
 </template>

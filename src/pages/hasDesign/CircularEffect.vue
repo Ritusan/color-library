@@ -1,8 +1,8 @@
 <template>
   <div class="has-design circular-effect">
     <div class="circle">
-      <span>Petit</span>
-      <span>Classic</span>
+      <span>HAPPY</span>
+      <span>BIBLEE</span>
     </div>
   </div>
 </template>

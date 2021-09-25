@@ -1,0 +1,21 @@
+@import '@/styles/hasDesign/HasDesign.scss';
+
+.translucent-background {
+  background: url(https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.7/dist/images/e58d9f9d0eee6d9b9add.webp) center center / cover no-repeat rgb(34, 34, 34);
+  .translucent-background-content {
+    width: 70%;
+    height: 60%;
+    background: rgba(255,255,255,0.5);
+    margin: auto;
+    margin-top: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .line-one {
+      font-size: 24px;
+      font-weight: 500;
+      color: #666;
+    }
+  }
+}

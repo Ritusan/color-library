@@ -1,8 +1,8 @@
 <template>
   <div class="has-design thick-border">
     <div class="border-box">
-      <span>STREET</span>
-      <span>STYLE</span>
+      <span>HAPPY</span>
+      <span>BIBLEE</span>
     </div>
   </div>
 </template>
