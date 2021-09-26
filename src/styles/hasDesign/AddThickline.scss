@@ -1,0 +1,16 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.add-thickline {
+  padding: 5%;
+  .content {
+    letter-spacing: 10px;
+  }
+  .line {
+    width: fit-content;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #9cc45a;
+    border-bottom: 12px solid #9cc45a;
+  }
+}
