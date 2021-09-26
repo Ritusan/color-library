@@ -1,0 +1,22 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.bandedshading-rhythm {
+  .content {
+    padding: 30px;
+    span {
+      padding: 8px 30px;
+      letter-spacing: 6px;
+      display: inline-block;
+      font-size: 20px;
+      &:first-child {
+        background: #fffded;
+        color: #e4c1db;
+      }
+      &:nth-child(2) {
+        background: #e4c1db;
+        color: #fffded;
+        transform: translate(89px, 28px) rotate(90deg);
+      }
+    }
+  }
+}
