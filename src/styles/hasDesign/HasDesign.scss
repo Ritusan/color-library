@@ -5,3 +5,9 @@ $base-color: #84b9e5;
   height: 600px;
   border: 1px solid $base-color;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

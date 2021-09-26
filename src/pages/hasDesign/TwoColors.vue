@@ -4,7 +4,7 @@
     <div class="item-two">
       <div class="item-two-text">
         <span>HAPPY</span>
-        <span>BIBLEE</span>
+        <span>Polaris</span>
         <span>AKIRA</span>
       </div>
     </div>
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-  export default {
-    name: 'TwoColors'
-  }
+export default {
+  name: 'TwoColors',
+}
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/hasDesign/TwoColors.scss";
+@import '@/styles/hasDesign/TwoColors.scss';
 </style>

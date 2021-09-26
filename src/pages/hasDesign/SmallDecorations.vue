@@ -3,7 +3,7 @@
     <div class="small-decorations-content">
       <div class="line-one">
         <span>HAPPY</span>
-        <span>BIBLEE</span>
+        <span>Polaris</span>
       </div>
     </div>
     <div class="top-text">
@@ -22,11 +22,11 @@
 </template>
 
 <script>
-  export default {
-    name: 'SmallDecorations'
-  }
+export default {
+  name: 'SmallDecorations',
+}
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/hasDesign/SmallDecorations.scss";
+@import '@/styles/hasDesign/SmallDecorations.scss';
 </style>

@@ -1,0 +1,12 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.white-around {
+  .content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 30px solid #94d0bf;
+    font-size: 24px;
+    letter-spacing: 6px;
+  }
+}
