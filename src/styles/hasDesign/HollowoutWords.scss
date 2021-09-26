@@ -1,0 +1,13 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.hollowout-words {
+  .content {
+    padding: 50px;
+    align-items: flex-start;
+    color: transparent;
+    -webkit-text-stroke: 1px $base-color;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 8px;
+  }
+}
