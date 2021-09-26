@@ -1,0 +1,13 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.words-blank {
+  padding: 10%;
+  .line {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    &:first-child {
+      border-bottom: 2px solid #333;
+    }
+  }
+}
