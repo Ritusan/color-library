@@ -1,0 +1,24 @@
+@import "@/styles/hasDesign/HasDesign.scss";
+
+.slash-segmentation {
+  .content {
+    width: 300px;
+    height: 300px;
+    background: #e4c1db;
+    color: #fffded;
+    font-size: 24px;
+    letter-spacing: 6px;
+    // 六边形
+    // clip-path: polygon(75% 0,100% 50%,75% 100%, 25% 100%,0 50%, 25% 0);
+    // 三角形
+    // clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    // 梯形
+    clip-path: polygon(100% 0,75% 100%, 25% 100%, 0 0);
+    // 圆形
+    // clip-path: circle(50% at 50% 50%);
+    // 椭圆
+    // clip-path: ellipse(50% 25% at 50% 50%);
+    // 内置矩形
+    clip-path: inset(20px 20px 30px 40px round 10px 20px 50px 20px);
+  }
+}
